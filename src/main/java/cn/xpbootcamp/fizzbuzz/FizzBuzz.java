@@ -2,27 +2,19 @@ package cn.xpbootcamp.fizzbuzz;
 
 public class FizzBuzz {
     public String sayNumbers(int num) {
-        if ( num % 3 == 0 && num % 5 == 0 && num % 7 == 0){
-            return "FizzBuzzWhizz";
-        }
-        if ( num % 3 == 0 && num % 5 == 0){
-            return "FizzBuzz";
-        }
-        if ( num % 3 == 0 && num % 7 == 0){
-            return "FizzWhizz";
-        }
-        if ( num % 5 == 0 && num % 7 == 0){
-            return "BuzzWhizz";
-        }
+        String result = "";
         if ( num % 3 == 0){
-            return "Fizz";
+            result += "Fizz";
         }
         if ( num % 5 == 0){
-            return "Buzz";
+            result += "Buzz";
         }
         if ( num % 7 == 0){
-            return "Whizz";
+            result += "Whizz";
         }
-        return String.valueOf(num);
+        if (result.equals("")) {
+            result = String.valueOf(num);
+        }
+        return result;
     }
 }
