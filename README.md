@@ -1,5 +1,6 @@
 # TDD @FizzBuzz
 
+![Build](https://github.com/nalansitan/tdd-fizzbuzz/workflows/Build/badge.svg?branch=final-exam)
 
 ## 开发环境
  - JDK1.8+
