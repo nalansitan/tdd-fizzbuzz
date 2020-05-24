@@ -18,4 +18,10 @@ public class FizzBuzzTest {
         Assert.assertEquals("Fizz",fb.sayNumbers(12));
     }
 
+    @Test
+    public void should_return_buzz_when_given_multiple_of_5(){
+        FizzBuzz fb = new FizzBuzz();
+        Assert.assertEquals("Buzz",fb.sayNumbers(10));
+        Assert.assertEquals("Buzz",fb.sayNumbers(20));
+    }
 }
