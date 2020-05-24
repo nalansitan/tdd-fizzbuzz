@@ -38,4 +38,11 @@ public class FizzBuzzTest {
         Assert.assertEquals("FizzBuzz",fb.sayNumbers(15));
         Assert.assertEquals("FizzBuzz",fb.sayNumbers(30));
     }
+
+    @Test
+    public void should_return_fizzwhizz_when_given_multiple_of_3_and_7(){
+        FizzBuzz fb = new FizzBuzz();
+        Assert.assertEquals("FizzWhizz",fb.sayNumbers(21));
+        Assert.assertEquals("FizzWhizz",fb.sayNumbers(42));
+    }
 }
